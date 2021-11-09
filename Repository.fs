@@ -10,6 +10,7 @@ module Repository =
         |> Sql.username "qdublpttcdvcri"
         |> Sql.password "d6900236d1cd37f5e22cd007da11403972a415ca68668df69507409e4c08585d"
         |> Sql.sslMode SslMode.Require
+        |> Sql.trustServerCertificate true
         |> Sql.formatConnectionString
         |> Sql.connect
  
