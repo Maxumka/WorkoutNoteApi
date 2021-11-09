@@ -4,11 +4,12 @@ open Npgsql.FSharp
 
 module Repository = 
     let private dbConnect = 
-        Sql.host "localhost"
+        Sql.host "ec2-3-229-127-203.compute-1.amazonaws.com"
         |> Sql.port 5432
-        |> Sql.database "workoutNoteDb"
-        |> Sql.username "postgres"
-        |> Sql.password "1"
+        |> Sql.database "d3anj3rcbua4r2"
+        |> Sql.username "qdublpttcdvcri"
+        |> Sql.password "d6900236d1cd37f5e22cd007da11403972a415ca68668df69507409e4c08585d"
+        |> Sql.sslMode SslMode.Require
         |> Sql.formatConnectionString
         |> Sql.connect
  
