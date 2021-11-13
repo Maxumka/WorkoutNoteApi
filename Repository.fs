@@ -100,7 +100,7 @@ module Repository =
             |> Sql.parameters ["Exercise_id", Sql.int exerciseId]
             |> Sql.execute (fun r -> 
             {
-                Id = r.int "id"
+                Id = r.int "s_id"
                 Weight = r.double "weight"
                 Reps = r.int "reps"
                 ExerciseId = exerciseId
